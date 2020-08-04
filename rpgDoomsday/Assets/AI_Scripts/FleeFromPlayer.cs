@@ -29,7 +29,7 @@ public class FleeFromPlayer : MonoBehaviour
 
     private void Flee()
     {
-        closestPlayer = Helpers.GetClosestPlayer(this.transform, players);
+        closestPlayer = Helpers.GetClosestPlayer(this.transform, players).transform;
         float distance = Vector3.Distance(transform.position, closestPlayer.position);
         //Debug.Log("Distance: " + distance);
 
