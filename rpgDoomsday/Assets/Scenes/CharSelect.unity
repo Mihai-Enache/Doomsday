@@ -1723,7 +1723,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Character 4
+  m_Text: Cleric
 --- !u!222 &185634779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8164,7 +8164,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Character 5
+  m_Text: Thief
 --- !u!222 &1212391491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8260,7 +8260,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 095ee4c8eef6e3d4bb62e04a80ac1ccc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9afeb53f9a79f0f43976a6db929545f9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10154,7 +10154,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Character 2
+  m_Text: Ranger
 --- !u!222 &1426377230
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10837,7 +10837,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 095ee4c8eef6e3d4bb62e04a80ac1ccc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9afeb53f9a79f0f43976a6db929545f9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11929,7 +11929,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Character 1
+  m_Text: Warrior
 --- !u!222 &1644661132
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12102,7 +12102,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Character 3
+  m_Text: Wizard
 --- !u!222 &1682100017
 CanvasRenderer:
   m_ObjectHideFlags: 0
