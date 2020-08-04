@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Dungeon2to3 : MonoBehaviour
 {
+    public LoadingScreenControl lsc;
+    
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("Opened Door!");
         if (other.gameObject.tag == "Player")
-            SceneManager.LoadScene("Dungeon3");
+            //SceneManager.LoadScene("Dungeon3");
+            lsc.LoadScreenExample(3);
     }
 }
