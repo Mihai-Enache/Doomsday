@@ -20,7 +20,7 @@ public class UISpellTooltip : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             ++index;
-            if (index > 4)
+            if (index > 5)
                 index = 0;
         }
         if (index == -1)
