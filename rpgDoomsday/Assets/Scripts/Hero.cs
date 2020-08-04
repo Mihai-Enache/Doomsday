@@ -41,17 +41,19 @@ public class Hero : ManaUser
         // doar pentru testing
         AddExperience(ExperienceForLevel(2));
         health /= 2;
-        attackSpell = new SpellExplosion("Attack", 0, 0, 2.5f, new InstantAttackDamage(1), 0.5f, true, false, "ImpactHoly");
-        spells.Add(new SpellMissile("Arcane Missile", 1, 2, 40, new InstantAttributeDamage(1, Attribute.WIS), 2, 2, true, "MissileArcane", "ImpactArcane"));
-        spells.Add(new SpellMissile("Fireball", 5, 10, 40, new DebuffDOT("Fire", 8, 5, 2, 2, 1), 2, 2, true, "MissileFire", "ImpactFire"));
-        spells.Add(new SpellExplosion("Heal", 0, 20, 80, new InstantAttributeHeal(10, Attribute.WIS), 2, false, true, "ImpactHoly"));
-        spells.Add(new SpellBlink("Blink", 2, 5, 40, new InstantAttributeDamage(2, Attribute.DEX), 2, true, false, "ImpactArcane"));
-        spells.Add(new SpellAoe("Hellfire", 10, 8, new DebuffDOT("Fire", 8, 5, 2, 2, 1), 2, true, true, "ImpactFire"));
+        attackSpell = new SpellExplosion("Attack", 0, 0, 2.5f, new InstantAttackDamage(1), 0.5f, true, false, "ImpactHoly", false);
+        SetSpell(0, "Arcane Missile");
+        SetSpell(1, "Sanguine Shot");
+        SetSpell(2, "Blink");
+        SetSpell(3, "Rain of Arrows");
+        SetSpell(4, "Fireball");
+        SetSpell(5, "Hellfire");
     }
 
     public new void FixedUpdate()
     {
         base.FixedUpdate();
+        Debug.LogWarning(spells[0].GetDescription());
     }
 
     /**
@@ -123,10 +125,12 @@ public class Hero : ManaUser
     }
 
     /// <summary>When a hero dies, they lose a percentage of their gold.</summary>
-    public new void Die()
+    public override void Die()
     {
         int gold = inventory.gold;
         gold -= gold * goldPercentageLost / 100;
         inventory.gold = gold;
+        Cleanse();
+        health = healthMax / 2;
     }
 }

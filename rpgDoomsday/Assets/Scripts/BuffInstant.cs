@@ -8,10 +8,11 @@ public abstract class BuffInstant : Buff
     {
         durationMax = -1;
         stacksMax = 1;
-        name = "instant";
+        buffName = "Instant Buff";
     }
     public override void OnApply(Unit target)
     {
+        base.OnApply(target);
         target.RemoveBuff(this);
         Execute(target);
     }

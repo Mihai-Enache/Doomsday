@@ -16,10 +16,12 @@ public abstract class Unit : MonoBehaviour
     public Dictionary<Buff, Unit> buffSources = new Dictionary<Buff, Unit>();
     public Dictionary<Buff, int> buffStacks = new Dictionary<Buff, int>();
     public Dictionary<Buff, float> buffDuration = new Dictionary<Buff, float>();
+    public Dictionary<Buff, float> buffTimer = new Dictionary<Buff, float>();
     [HideInInspector]
     public Alliance alliance;
     public int attackDamageMin, attackDamageMax;
-    public float attackCooldownMax, attackCooldown = 0;
+    public float attackCooldownBase, attackCooldownMax, attackCooldown = 0;
+    public float movementSpeedBase, movementSpeed;
     public bool isStunned = false;
 
     // Start is called before the first frame update
@@ -63,6 +65,8 @@ public abstract class Unit : MonoBehaviour
     public void FixedUpdate()
     {
         isStunned = false;
+        movementSpeed = movementSpeedBase;
+        attackCooldownMax = attackCooldownBase;
         if (health <= 0 || transform.position.y <= -10)
         {
             Die();
@@ -124,15 +128,15 @@ public abstract class Unit : MonoBehaviour
     public void ApplyBuff(Buff buff, Unit source)
     {
         int i = 0;
-        Debug.Log("buff:" + buff.name);
+        //Debug.Log("buff:" + buff.buffName);
         for (; i < buffs.Count && !buffs[i].Equals(buff); ++i);
         if (i != buffs.Count)
         {
-            buffDuration[buff] = Mathf.Max(buffDuration[buff], buff.durationMax);
+            buffDuration[buff] = buff.durationMax;
             if (buffStacks[buff] < buff.stacksMax)
                 ++buffStacks[buff];
             buffSources[buff] = source;
-            Debug.Log("buff:" + buffStacks[buff]);
+            //Debug.Log("buff:" + buffStacks[buff]);
             buff.OnApply(this);
         }
         else
@@ -140,7 +144,11 @@ public abstract class Unit : MonoBehaviour
             buffs.Add(buff);
             buffSources[buff] = source;
             buffStacks[buff] = 1;
-            buffDuration[buff] = buff.durationMax;
+            if (!(buff is BuffInstant))
+            {
+                buffDuration[buff] = buff.durationMax;
+                buffTimer[buff] = 0;
+            }
             buff.OnApply(this);
         }
     }
@@ -201,5 +209,12 @@ public abstract class Unit : MonoBehaviour
 
     public abstract bool CastAttack(Vector3 pos);
 
-
+    public void Cleanse()
+    {
+        buffs = new List<Buff>();
+        buffSources = new Dictionary<Buff, Unit>();
+        buffStacks = new Dictionary<Buff, int>();
+        buffDuration = new Dictionary<Buff, float>();
+        buffTimer = new Dictionary<Buff, float>();
+    }
 }

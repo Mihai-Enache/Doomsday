@@ -7,10 +7,11 @@ public class InstantAttributeDamage : BuffInstant
     public float damage;
     public Attribute atr;
 
-    public InstantAttributeDamage(float damage, Attribute atr)
+    public InstantAttributeDamage(float damage, Attribute atr, Buff nextBuff)
     {
         this.damage = damage;
         this.atr = atr;
+        this.nextBuff = nextBuff;
     }
 
     public override void Execute(Unit target)
@@ -31,5 +32,12 @@ public class InstantAttributeDamage : BuffInstant
         if (hero.heroClass == HeroClass.WIZARD)
             damage *= 1.15f;
         target.TakeDamage(damage * (1 + bonus / 100));
+    }
+
+    protected override void GenerateMainDescription()
+    {
+        description = "Deals " + damage + " damage.";
+        description += "\nEach point of " + atr + " increases effieciency by 1%.";
+        description += "\nBeing a Wizard increases effieciency by 15%.";
     }
 }

@@ -4,32 +4,36 @@ using UnityEngine;
 
 public class DebuffDOT : Buff
 {
-    public float t = 0, damageInterval = 1, damageOverTime = 5, initialDamage = 0;
+    public float damageInterval = 1, damageOverTime = 5;
 
-    public DebuffDOT(string name, float durationMax, int stacksMax, float damageInterval, float damageOverTime, float initialDamage)
+    public DebuffDOT(string buffName, float durationMax, int stacksMax, float damageInterval, float damageOverTime, string impactName)
     {
-        this.name = name;
-        this.durationMax = durationMax;
+        this.buffName = buffName;
+        this.durationMax = durationMax + 0.1f; //daca pun fara 0.1f, efectul din ultima secunda nu se execta
         this.stacksMax = stacksMax;
         this.damageInterval = damageInterval;
         this.damageOverTime = damageOverTime;
-        this.initialDamage = initialDamage;
-    }
-
-    public override void OnApply(Unit target)
-    {
-        target.TakeDamage(initialDamage);
+        LoadImpact(impactName);
     }
 
     public override void TriggeredUpdate(Unit target)
     {
         if (target == null)
             return;
-        t += Time.deltaTime;
-        if (t >= damageInterval)
+        target.buffTimer[this] += Time.deltaTime;
+        if (target.buffTimer[this] >= damageInterval)
         {
-            t -= damageInterval;
+            target.buffTimer[this] -= damageInterval;
             target.TakeDamage(damageOverTime * target.buffStacks[this]);
+            ShowImpact(target);
         }
+    }
+    protected override void GenerateMainDescription()
+    {
+        description = "Deals " + damageOverTime + " damage every ";
+        if (damageInterval == 1)
+            description += "second.";
+        else
+            description += damageInterval + " seconds.";
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ManaUser : Unit
 {
     public float mana = 100, manaMax = 100, regen = 5;
-    public List<Spell> spells = new List<Spell>();
+    public Spell[] spells = new Spell[11];
     public Spell attackSpell;
 
     public new void FixedUpdate()
@@ -17,11 +17,13 @@ public class ManaUser : Unit
             if (mana > manaMax)
                 mana = manaMax;
         }
-        for (int i = 0; i < spells.Count; ++i)
+        for (int i = 0; i < spells.Length; ++i)
         {
             Spell spell = spells[i];
+            if (spell == null)
+                continue;
             spell.FixedUpdate();
-            if (spells.Count <= i)
+            if (spells.Length <= i)
                 break;
             if (!spell.Equals(spells[i]))
             {
@@ -86,5 +88,10 @@ public class ManaUser : Unit
         if (attackSpell.Cast(this, pos))
             return true;
         return false;
+    }
+
+    public void SetSpell(int index, string spellName)
+    {
+        spells[index] = SpellManager.spells[spellName].Clone();
     }
 }
