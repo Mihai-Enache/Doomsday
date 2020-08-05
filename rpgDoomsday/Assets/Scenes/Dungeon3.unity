@@ -9525,6 +9525,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 351164257}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &353101932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 424871452}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 353101933}
+  m_Layer: 0
+  m_Name: Enemy - patrols + attacks (24) (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &353101933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 424871452}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353101932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 424871453}
+  m_Father: {fileID: 474014658}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &353348747
 GameObject:
   m_ObjectHideFlags: 0
@@ -10832,11 +10863,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1674c30797f7ce3499bdb3a0ab41f9bf, type: 3}
---- !u!4 &424871453 stripped
+--- !u!4 &424871453
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 424871452}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063343346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 353101933}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425482633
 GameObject:
   m_ObjectHideFlags: 0
@@ -12142,12 +12182,12 @@ Transform:
   m_LocalPosition: {x: -56.76233, y: 11.623005, z: 68.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 424871453}
-  - {fileID: 889391624}
-  - {fileID: 1053773246}
-  - {fileID: 1206455024}
-  - {fileID: 1425629516}
-  - {fileID: 2143186545}
+  - {fileID: 353101933}
+  - {fileID: 1437623053}
+  - {fileID: 1842519854}
+  - {fileID: 517665190}
+  - {fileID: 1052992797}
+  - {fileID: 962696456}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13382,6 +13422,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1664749419}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &517665189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1206455023}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 517665190}
+  m_Layer: 0
+  m_Name: Enemy - patrols + attacks (24) (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &517665190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1206455023}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517665189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1206455024}
+  m_Father: {fileID: 474014658}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &517990367
 GameObject:
@@ -24931,11 +25002,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1674c30797f7ce3499bdb3a0ab41f9bf, type: 3}
---- !u!4 &889391624 stripped
+--- !u!4 &889391624
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 889391623}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749319759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1437623053}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &889707096
 GameObject:
   m_ObjectHideFlags: 0
@@ -26857,6 +26937,37 @@ Transform:
   m_Father: {fileID: 5454361}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &962696455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2143186544}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962696456}
+  m_Layer: 0
+  m_Name: Enemy - patrols + attacks (26) (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962696456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2143186544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962696455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2143186545}
+  m_Father: {fileID: 474014658}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &967543982
 GameObject:
   m_ObjectHideFlags: 0
@@ -27759,6 +27870,16 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6787619118309247225, guid: 0cf78997186f20a47b26309b72acb99c,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 160
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787619118309247225, guid: 0cf78997186f20a47b26309b72acb99c,
+        type: 3}
+      propertyPath: m_Value
+      value: 160
+      objectReference: {fileID: 0}
     - target: {fileID: 6787619118347612957, guid: 0cf78997186f20a47b26309b72acb99c,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -27944,6 +28065,21 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6787619118973361927, guid: 0cf78997186f20a47b26309b72acb99c,
+        type: 3}
+      propertyPath: m_MaxValue
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787619118973361927, guid: 0cf78997186f20a47b26309b72acb99c,
+        type: 3}
+      propertyPath: m_Value
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787619118994524735, guid: 0cf78997186f20a47b26309b72acb99c,
+        type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1245431078}
     - target: {fileID: 6787619119010589259, guid: 0cf78997186f20a47b26309b72acb99c,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -27964,6 +28100,21 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6787619119054134265, guid: 0cf78997186f20a47b26309b72acb99c,
+        type: 3}
+      propertyPath: mslider
+      value: 
+      objectReference: {fileID: 988368111}
+    - target: {fileID: 6787619119054134265, guid: 0cf78997186f20a47b26309b72acb99c,
+        type: 3}
+      propertyPath: hslider
+      value: 
+      objectReference: {fileID: 988368110}
+    - target: {fileID: 6787619119054134265, guid: 0cf78997186f20a47b26309b72acb99c,
+        type: 3}
+      propertyPath: hero
+      value: 
+      objectReference: {fileID: 1245431078}
     - target: {fileID: 6787619119076750363, guid: 0cf78997186f20a47b26309b72acb99c,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -28251,6 +28402,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf78997186f20a47b26309b72acb99c, type: 3}
+--- !u!114 &988368110 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6787619118973361927, guid: 0cf78997186f20a47b26309b72acb99c,
+    type: 3}
+  m_PrefabInstance: {fileID: 988368109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &988368111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6787619118309247225, guid: 0cf78997186f20a47b26309b72acb99c,
+    type: 3}
+  m_PrefabInstance: {fileID: 988368109}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &990231694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1053773245}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053773246}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &991667267
 GameObject:
   m_ObjectHideFlags: 0
@@ -29817,6 +30008,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1051093737}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1052992796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1425629515}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052992797}
+  m_Layer: 0
+  m_Name: Enemy - patrols + attacks (28) (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1052992797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1425629515}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052992796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1425629516}
+  m_Father: {fileID: 474014658}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1053773245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29901,11 +30123,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1674c30797f7ce3499bdb3a0ab41f9bf, type: 3}
---- !u!4 &1053773246 stripped
+--- !u!4 &1053773246
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 1053773245}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990231694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1842519854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1055126519
 GameObject:
   m_ObjectHideFlags: 0
@@ -33258,11 +33489,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1674c30797f7ce3499bdb3a0ab41f9bf, type: 3}
---- !u!4 &1206455024 stripped
+--- !u!4 &1206455024
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 1206455023}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222520860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 517665190}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1209252857
 GameObject:
   m_ObjectHideFlags: 0
@@ -33426,6 +33666,22 @@ Transform:
   m_Father: {fileID: 1110374535}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1222520860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1206455023}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1206455024}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1222660169
 GameObject:
   m_ObjectHideFlags: 0
@@ -38741,11 +38997,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1674c30797f7ce3499bdb3a0ab41f9bf, type: 3}
---- !u!4 &1425629516 stripped
+--- !u!4 &1425629516
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 1425629515}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031444787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1052992797}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1426425310
 GameObject:
   m_ObjectHideFlags: 0
@@ -39046,6 +39311,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2011843579}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1437623052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 889391623}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1437623053}
+  m_Layer: 0
+  m_Name: Enemy - patrols + attacks (27) (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1437623053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 889391623}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437623052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 889391624}
+  m_Father: {fileID: 474014658}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1438815854
 GameObject:
@@ -40538,6 +40834,22 @@ Transform:
   m_Father: {fileID: 809021093}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1495220447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2143186544}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2143186545}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1497388525
 GameObject:
   m_ObjectHideFlags: 0
@@ -47709,6 +48021,22 @@ Transform:
   m_Father: {fileID: 311297815}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1749319759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 889391623}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 889391624}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &1750522446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50606,6 +50934,37 @@ Transform:
   m_LocalScale: {x: 1, y: 1.0000002, z: 1.0000002}
   m_Children: []
   m_Father: {fileID: 649146828}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1842519853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1053773245}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842519854}
+  m_Layer: 0
+  m_Name: Enemy - patrols + attacks (25) (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842519854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1053773245}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842519853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1053773246}
+  m_Father: {fileID: 474014658}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1845393408
@@ -56264,6 +56623,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2029786131}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2031444787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1425629515}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1425629516}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &2031868716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57168,6 +57543,22 @@ Transform:
   m_Father: {fileID: 316616141}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2063343346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 424871452}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 424871453}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &2064577732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59765,11 +60156,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1674c30797f7ce3499bdb3a0ab41f9bf, type: 3}
---- !u!4 &2143186545 stripped
+--- !u!4 &2143186545
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 2143186544}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495220447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 962696456}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2143719906
 GameObject:
   m_ObjectHideFlags: 0
