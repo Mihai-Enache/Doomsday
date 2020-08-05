@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public enum Alliance
 {
     Good, // Playeri, Pets, Minions, Mercenari, NPC care te ajuta in lupta, Gardieni in oras, Monstri posedati de playeri
@@ -11,6 +11,7 @@ public enum Alliance
 
 public abstract class Unit : MonoBehaviour
 {
+    //public Slider healthslider;
     public float health, healthMax;
     public List<Buff> buffs = new List<Buff>();
     public Dictionary<Buff, Unit> buffSources = new Dictionary<Buff, Unit>();
@@ -28,6 +29,8 @@ public abstract class Unit : MonoBehaviour
     void Start()
     {
         health = healthMax;
+        //change healthslider
+        //healthslider.value = health;
     }
 
     private Texture2D MakeTex(int width, int height, Color col)
@@ -97,9 +100,14 @@ public abstract class Unit : MonoBehaviour
     public void Heal(float amount)
     {
         health += amount;
+
+        //healthslider.value = health;
+
         if (health > healthMax)
         {
             health = healthMax;
+
+            //healthslider.value = health;
         }
         else if (health <= 0)
             Die();

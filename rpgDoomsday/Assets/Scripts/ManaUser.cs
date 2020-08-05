@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManaUser : Unit
 {
+    //public Slider slidermana;
+
+    //public Slider sliderHealth;
     public float mana = 100, manaMax = 100, regen = 5;
     public Spell[] spells = new Spell[11];
     public Spell attackSpell;
@@ -16,6 +20,8 @@ public class ManaUser : Unit
             mana += regen * Time.deltaTime * manaMax / 100;
             if (mana > manaMax)
                 mana = manaMax;
+            //change slider
+            //slidermana.value = mana;
         }
         for (int i = 0; i < spells.Length; ++i)
         {
@@ -42,6 +48,9 @@ public class ManaUser : Unit
             mana = manaMax;
         else if (mana < 0)
             mana = 0;
+
+        //change slider
+        //slidermana.value = mana;
     }
 
 
@@ -53,6 +62,10 @@ public class ManaUser : Unit
         if (mana < amount)
             return false;
         mana -= amount;
+
+        //change slider
+       // slidermana.value = mana;
+
         return true;
     }
 
