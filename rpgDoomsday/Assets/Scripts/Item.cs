@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item
+public abstract class Item : ScriptableObject
 {
     public string itemName;
     public int stackSize, stackSizeMax;
@@ -11,6 +11,9 @@ public abstract class Item
     public int price;
     /// <summary>How much more expensive the item is while in a shop.</summary>
     public const int priceCoeficient = 10;
+
+    /// </summary> inventory sprite for the specific item 
+    public Sprite icon = null;
 
     public bool IsInPlayerInventory()
     {

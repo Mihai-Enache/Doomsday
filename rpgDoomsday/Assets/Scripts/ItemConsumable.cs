@@ -1,9 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum ConsumableType
+{
+    Potion,
+    Coin
+}
+
+[CreateAssetMenu(fileName = "New Consumable", menuName = "Item/Consumable")]
 public class ItemConsumable : Item
 {
+    public ConsumableType type;
     public Buff effect;
 
     ItemConsumable(int stackSizeMax)
@@ -17,6 +26,8 @@ public class ItemConsumable : Item
         if (stackSize <= 0)
             owner.RemoveItem(backpackIndex);
         Hero hero = ((PlayerInventory)owner).hero;
-        hero.ApplyBuff(effect, hero);
+
+        if (this.type != ConsumableType.Coin)
+            hero.ApplyBuff(effect, hero);
     }
 }

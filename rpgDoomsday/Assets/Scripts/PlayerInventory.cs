@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ItemSlot
+/*public enum ItemSlot
 {
     Helmet,
     Necklace,
@@ -13,6 +13,25 @@ public enum ItemSlot
     Boots,
     Ring,
     Gloves
+}*/
+
+public enum ItemSlot
+{
+    //Weapon Slots
+    OneHand,
+    TwoHand,
+    OffHand,
+
+    //Armor Slots
+    Head,
+    Torso,
+    Hands,
+    Feet,
+
+    //Trinket Slots
+    Neck,
+    Badge,
+    Ring
 }
 
 public class PlayerInventory : Inventory
