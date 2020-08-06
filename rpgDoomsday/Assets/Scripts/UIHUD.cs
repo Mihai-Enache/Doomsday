@@ -30,8 +30,8 @@ public class UIHUD : MonoBehaviour
         mslider.value = Mathf.FloorToInt(hero.mana);
         mslider.maxValue = Mathf.FloorToInt(hero.manaMax);
         xpText.text = hero.xp + "/" + hero.ExperienceForLevel(hero.level);
-        xpslider.value = hero.xp;
-        xpslider.maxValue = hero.ExperienceForLevel(hero.level);
+        xpslider.value = hero.xp - hero.ExperienceForLevel(hero.level - 1);
+        xpslider.maxValue = hero.ExperienceForLevel(hero.level) - hero.ExperienceForLevel(hero.level - 1);
         lvlText.text = "Level " + hero.level + " " + GetHeroClassName(hero.heroClass);
         goldText.text = hero.inventory.gold + " Gold";
         strText.text = "STR: " + hero.strength;
