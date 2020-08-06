@@ -10,7 +10,7 @@ public class AggressiveMob : MonoBehaviour
     private float damage = 7.5f;
     private NavMeshAgent navMeshAgent;
     private GameObject[] players;
-    private GameObject closePlayer;
+    public GameObject closePlayer;
     private Transform[] playersPosition;
     public static bool ableToAttack;
     

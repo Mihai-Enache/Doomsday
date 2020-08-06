@@ -14,7 +14,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/SkeletonMelee/MeleeHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Helpers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Unit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Mage/FireballShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/AggressiveMob.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Mage/MageHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Patrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ManaUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/FleeFromPlayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -30,6 +32,8 @@
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/SkeletonMelee/AggressiveMob.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/SkeletonMage.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/AggressiveMob.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/MageHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/FireballShoot.cs" />
       </list>
     </option>
   </component>
@@ -77,6 +81,8 @@
       <updated>1596527193648</updated>
       <workItem from="1596527198297" duration="7498000" />
       <workItem from="1596535341207" duration="1036000" />
+      <workItem from="1596721013067" duration="4035000" />
+      <workItem from="1596726730585" duration="20000" />
     </task>
     <servers />
   </component>

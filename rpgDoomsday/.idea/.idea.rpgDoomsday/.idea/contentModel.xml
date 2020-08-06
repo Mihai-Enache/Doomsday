@@ -12,6 +12,10 @@
           <e p="AggressiveMob.cs" t="Include" />
           <e p="FleeFromPlayer.cs" t="Include" />
           <e p="Helpers.cs" t="Include" />
+          <e p="Mage" t="Include">
+            <e p="FireballShoot.cs" t="Include" />
+            <e p="MageHandler.cs" t="Include" />
+          </e>
           <e p="Patrol.cs" t="Include" />
           <e p="SkeletonMelee" t="Include">
             <e p="MeleeHandler.cs" t="Include" />
@@ -92,19 +96,23 @@
             </e>
           </e>
         </e>
+        <e p="ItemPickUp.cs" t="Include" />
         <e p="MonsterAnimations.cs" t="Include" />
         <e p="SceneSwap.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
           <e p="AutoDestoyableParticle.cs" t="Include" />
           <e p="Buff.cs" t="Include" />
+          <e p="BuffAttributeBoost.cs" t="Include" />
           <e p="BuffInstant.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
           <e p="CharSelect.cs" t="Include" />
           <e p="ControlSwitch.cs" t="Include" />
           <e p="DebuffDOT.cs" t="Include" />
+          <e p="DebuffStun.cs" t="Include" />
           <e p="DroppedGold.cs" t="Include" />
           <e p="DroppedItem.cs" t="Include" />
+          <e p="DropProbability.cs" t="Include" />
           <e p="FlyingRigidbodyFirstPersonController.cs" t="Include" />
           <e p="ForceToAcessibleVolume.cs" t="Include" />
           <e p="FreeCamera.cs" t="Include" />
@@ -121,6 +129,12 @@
           <e p="Item.cs" t="Include" />
           <e p="ItemConsumable.cs" t="Include" />
           <e p="ItemEquipable.cs" t="Include" />
+          <e p="ItemEquipableArmour.cs" t="Include" />
+          <e p="ItemEquipableSpecialWeapons.cs" t="Include" />
+          <e p="ItemEquipableTrinket.cs" t="Include" />
+          <e p="ItemEquipableWeapon.cs" t="Include" />
+          <e p="ItemQuest.cs" t="Include" />
+          <e p="LoadingScreenControl.cs" t="Include" />
           <e p="LOGIN.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="ManaUser.cs" t="Include" />
@@ -131,27 +145,33 @@
           <e p="MouseManager.cs" t="Include" />
           <e p="OptionsMenu.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
+          <e p="pauseMenunew.cs" t="Include" />
           <e p="PlayerCurrentText.cs" t="Include" />
           <e p="PlayerInventory.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
           <e p="PlayerScript1.cs" t="Include" />
           <e p="PlayerScript2.cs" t="Include" />
+          <e p="progressbar.cs" t="Include" />
+          <e p="ProgressBariImage.cs" t="Include" />
           <e p="QualitySetup.cs" t="Include" />
           <e p="quitscript.cs" t="Include" />
           <e p="REGISTER.cs" t="Include" />
+          <e p="SceneIndexes.cs" t="Include" />
           <e p="settingsmanager.cs" t="Include" />
           <e p="ShipScript.cs" t="Include" />
           <e p="SkyboxReplacer.cs" t="Include" />
           <e p="soundScriptbutton.cs" t="Include" />
           <e p="Spell.cs" t="Include" />
           <e p="SpellAoe.cs" t="Include" />
-          <e p="SpellBlink.cs" t="Include" />
           <e p="SpellExplosion.cs" t="Include" />
+          <e p="SpellManager.cs" t="Include" />
           <e p="SpellMissile.cs" t="Include" />
           <e p="textscript.cs" t="Include" />
           <e p="twinkle.cs" t="Include" />
+          <e p="UIBuff.cs" t="Include" />
           <e p="UIHUD.cs" t="Include" />
           <e p="UISpell.cs" t="Include" />
+          <e p="UISpellTooltip.cs" t="Include" />
           <e p="Unit.cs" t="Include" />
           <e p="VectorFunctions.cs" t="Include" />
         </e>
