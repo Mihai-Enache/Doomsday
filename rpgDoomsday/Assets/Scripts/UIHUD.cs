@@ -23,7 +23,13 @@ public class UIHUD : MonoBehaviour
         manaText.text = Mathf.FloorToInt(hero.mana) + "/" + Mathf.FloorToInt(hero.manaMax);
         mslider.value = hero.mana;
         xpText.text = hero.xp + "/" + hero.ExperienceForLevel(hero.level);
-        lvlText.text = "Level " + hero.level;
+        lvlText.text = "Level " + hero.level + " " + GetHeroClassName(hero.heroClass);
         goldText.text = hero.inventory.gold + " Gold";
+    }
+
+    public static string GetHeroClassName(HeroClass hc)
+    {
+        string s = hc.ToString().ToLower();
+        return char.ToUpper(s[0]) + s.Substring(1);
     }
 }
