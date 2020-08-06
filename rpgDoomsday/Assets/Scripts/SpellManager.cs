@@ -21,7 +21,7 @@ public class SpellManager
         AddSpell(new SpellExplosion("Blink", 2, 5, 20, new InstantAttributeDamage(2, Attribute.DEX, null), 2, true, false, "ImpactArcane", true));
         AddSpell(new SpellAoe("Hellfire", 6, 10, new InstantAttributeDamage(10, Attribute.STR, fire), 2.5f, true, true, "ImpactFire"));
         AddSpell(new SpellAoe("Smash", 10, 20, new InstantAttributeDamage(10, Attribute.STR, new DebuffStun("Smash", 2)), 2, true, true, "ImpactFire"));
-        AddSpell(new SpellAoe("Blood Rush", 15, 10, new BuffAttributeBoost("Blood Rush", 4, 1, 0, 25, 5, Attribute.STR, "ImpactHoly"), 0, false, true, null));
+        AddSpell(new SpellAoe("Blood Rush", 15, 10, new BuffAttributeBoost("Blood Rush", 4, 1, 0, 25, 5, Attribute.STR, "ImpactCrimson"), 0, false, true, null));
     }
 
     static void AddSpell(Spell s)

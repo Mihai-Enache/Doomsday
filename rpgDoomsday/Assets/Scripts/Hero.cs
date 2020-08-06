@@ -39,11 +39,10 @@ public class Hero : ManaUser
         attackDamageMin = 9;
         attackDamageMax = 12;
         // doar pentru testing
-        AddExperience(ExperienceForLevel(2));
         health /= 2;
         attackSpell = new SpellExplosion("Attack", 0, 0, 2.5f, new InstantAttackDamage(1), 0.5f, true, false, "ImpactHoly", false);
-        SetSpell(0, "Arcane Missile");
-        SetSpell(1, "Sanguine Shot");
+        SetSpell(0, "Cleave");
+        SetSpell(1, "Blood Rush");
         SetSpell(2, "Blink");
         SetSpell(3, "Rain of Arrows");
         SetSpell(4, "Fireball");
