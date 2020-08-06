@@ -10,7 +10,7 @@ public class SpellManager
     static SpellManager()
     {
         // spammable spells
-        AddSpell(new SpellAoe("Cleave", 0.5f, 10, new InstantAttributeDamage(5, Attribute.STR, null), 5, true, false, "ImpactCrimson"));
+        AddSpell(new SpellAoe("Cleave", 0.5f, 10, new InstantAttributeDamage(5, Attribute.STR, null), 5, true, false, "ImpactGreen"));
         AddSpell(new SpellMissile("Arcane Missile", 0.5f, 20, 20, new InstantAttributeDamage(10, Attribute.WIS, null), 2, 2, true, "MissileArcane", "ImpactArcane"));
         AddSpell(new SpellMissile("Frost Shot", 0.5f, 15, 22, new InstantAttributeDamage(5, Attribute.DEX, new BuffAttributeBoost("Frost Shot", 4, 2, 0, -20, -20, Attribute.DEX, "")), 1, 3, true, "MissileFrost", "ImpactFrost"));
 
