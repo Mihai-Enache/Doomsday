@@ -12,14 +12,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/SkeletonMelee/MeleeHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIBuff.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Mage/FireballShoot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/FleeFromPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Helpers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Unit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Mage/FireballShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/AggressiveMob.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Mage/MageHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Tower/TowerBallShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Patrol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ManaUser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/FleeFromPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hero.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -34,6 +36,9 @@
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/AggressiveMob.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/MageHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/FireballShoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/towerballScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/TowerBallShoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Tower/TowerBallShoot.cs" />
       </list>
     </option>
   </component>
@@ -83,6 +88,7 @@
       <workItem from="1596535341207" duration="1036000" />
       <workItem from="1596721013067" duration="4035000" />
       <workItem from="1596726730585" duration="20000" />
+      <workItem from="1596795791540" duration="2248000" />
     </task>
     <servers />
   </component>

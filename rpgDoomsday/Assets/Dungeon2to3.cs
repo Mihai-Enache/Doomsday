@@ -11,7 +11,7 @@ public class Dungeon2to3 : MonoBehaviour
     {
         //Debug.Log("Opened Door!");
         if (other.gameObject.tag == "Player")
-            //SceneManager.LoadScene("Dungeon3");
-            lsc.LoadScreenExample(3);
+            SceneManager.LoadScene(3);
+            //lsc.LoadScreenExample(3);
     }
 }

@@ -83,7 +83,7 @@ public class PlayerMove : MonoBehaviour, IPunObservable
         else
         if (Input.GetButton("Fire2") || Input.GetButtonDown("Fire2")) //right click
         {
-            if (hero.spells[0] != null && Physics.Raycast(ray, out hit, hero.spells[0].range)) //max distance = spell range
+            if (hero.spells[0] != null && Physics.Raycast(ray, out hit, 1000)) //max distance = spell range
             {
                 GetComponent<Hero>().CastSpell(0, hit.point);
                 navMeshAgent.destination = transform.position;
@@ -91,7 +91,7 @@ public class PlayerMove : MonoBehaviour, IPunObservable
         }
         else if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            if (hero.spells[1] != null && Physics.Raycast(ray, out hit, hero.spells[1].range)) //max distance = spell range
+            if (hero.spells[1] != null && Physics.Raycast(ray, out hit, 1000)) //max distance = spell range
             {
                 GetComponent<Hero>().CastSpell(1, hit.point);
                 navMeshAgent.destination = transform.position;
@@ -99,7 +99,7 @@ public class PlayerMove : MonoBehaviour, IPunObservable
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            if (hero.spells[2] != null && Physics.Raycast(ray, out hit, hero.spells[2].range)) //max distance = spell range
+            if (hero.spells[2] != null && Physics.Raycast(ray, out hit, 1000)) //max distance = spell range
             {
                 GetComponent<Hero>().CastSpell(2, hit.point);
                 navMeshAgent.destination = transform.position;
@@ -107,7 +107,7 @@ public class PlayerMove : MonoBehaviour, IPunObservable
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            if (hero.spells[3] != null && Physics.Raycast(ray, out hit, hero.spells[3].range)) //max distance = spell range
+            if (hero.spells[3] != null && Physics.Raycast(ray, out hit, 1000)) //max distance = spell range
             {
                 GetComponent<Hero>().CastSpell(3, hit.point);
                 navMeshAgent.destination = transform.position;
@@ -115,7 +115,7 @@ public class PlayerMove : MonoBehaviour, IPunObservable
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            if (hero.spells[4] != null && Physics.Raycast(ray, out hit, hero.spells[4].range)) //max distance = spell range
+            if (hero.spells[4] != null && Physics.Raycast(ray, out hit, 1000)) //max distance = spell range
             {
                 GetComponent<Hero>().CastSpell(4, hit.point);
                 navMeshAgent.destination = transform.position;
@@ -123,7 +123,7 @@ public class PlayerMove : MonoBehaviour, IPunObservable
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            if (hero.spells[5] != null && Physics.Raycast(ray, out hit, hero.spells[5].range)) //max distance = spell range
+            if (hero.spells[5] != null && Physics.Raycast(ray, out hit, 1000)) //max distance = spell range
             {
                 GetComponent<Hero>().CastSpell(5, hit.point);
                 navMeshAgent.destination = transform.position;
