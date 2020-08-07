@@ -10,7 +10,7 @@ public class SpellManager
     static SpellManager()
     {
         // spammable spells (RMB)
-        AddSpell(new SpellAoe("Cleave", 0.5f, 12, new InstantAttributeDamage(7, Attribute.STR, null), 5, true, false, "ImpactGreen"));
+        AddSpell(new SpellAoe("Cleave", 0.5f, 12, new InstantAttributeDamage(7, Attribute.STR, null), 4, true, false, "ImpactGreen"));
         AddSpell(new SpellMissile("Arcane Missile", 0.5f, 20, 20, new InstantAttributeDamage(10, Attribute.WIS, null), 2, 2, true, "MissileArcane", "ImpactArcane"));
         AddSpell(new SpellMissile("Frost Shot", 0.5f, 15, 22, new InstantAttributeDamage(5, Attribute.DEX, new BuffAttributeBoost("Frost Shot", 4, 2, 0, -20, -20, Attribute.DEX, "")), 1, 3, true, "MissileFrost", "ImpactFrost"));
         // other spells (1-5)
@@ -20,7 +20,7 @@ public class SpellManager
         AddSpell(new SpellExplosion("Rain of Arrows", 20, 45, 22, new InstantAttributeDamage(30, Attribute.DEX, null), 2, true, false, "ImpactRainOfArrows", false));
         AddSpell(new SpellExplosion("Blink", 5, 5, 15, new InstantAttributeDamage(2, Attribute.DEX, null), 2, true, false, "ImpactArcane", true));
         AddSpell(new SpellAoe("Hellfire", 8, 10, new InstantAttributeDamage(10, Attribute.STR, fire), 2.5f, true, true, "ImpactFire"));
-        AddSpell(new SpellAoe("Smash", 20, 50, new InstantAttributeDamage(10, Attribute.STR, new DebuffStun("Smash", 2)), 2, true, false, "ImpactFire"));
+        AddSpell(new SpellAoe("Smash", 25, 50, new InstantAttributeDamage(15, Attribute.STR, new DebuffStun("Smash", 2)), 6, true, false, "ImpactFire"));
         AddSpell(new SpellAoe("Blood Rush", 15, 10, new BuffAttributeBoost("Blood Rush", 5, 1, 0, 25, 5, Attribute.STR, "ImpactCrimson"), 0, false, true, null));
     }
 
