@@ -2,12 +2,24 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Runtime.InteropServices.ComTypes;
-using UnityEditorInternal;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMove : MonoBehaviour, IPunObservable
 {
+    PhotonView photonView;
+
+    void Awake()
+    {
+        photonView = GetComponent<PhotonView>();
+
+        photonView.ObservedComponents.Add(this);
+        if (!photonView.IsMine && PhotonNetwork.IsConnected)
+        {
+            enabled = false;
+        }
+    }
     [Header("Stats")]
     public float attackDistance;
     public float attackRate;
@@ -159,6 +171,23 @@ public class PlayerMove : MonoBehaviour
             }
             navMeshAgent.isStopped = true;
             walking = false;
+        }
+    }
+    void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+
+            // We own this player: send the others our data
+            stream.SendNext(transform.position); //position of the character
+            stream.SendNext(transform.rotation); //rotation of the character
+
+        }
+        else
+        {
+            // Network player, receive data
+            Vector3 syncPosition = (Vector3)stream.ReceiveNext();
+            Quaternion syncRotation = (Quaternion)stream.ReceiveNext();
         }
     }
 }

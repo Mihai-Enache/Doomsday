@@ -1,9 +1,22 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monster : ManaUser
+public class Monster : ManaUser, IPunObservable
 {
+    PhotonView photonView;
+
+    void Awake()
+    {
+        photonView = GetComponent<PhotonView>();
+
+        photonView.ObservedComponents.Add(this);
+        if (!photonView.IsMine)
+        {
+            //enabled = false;
+        }
+    }
     public float xpDropped = 0;
     /// <summary>Used for mob item and gold drops.</summary>
     public Inventory inventory;
@@ -36,5 +49,22 @@ public class Monster : ManaUser
             h.AddExperience(xpDropped);
         }
         base.Die();
+    }
+    void IPunObservable.OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+
+            // We own this player: send the others our data
+            stream.SendNext(transform.position); //position of the character
+            stream.SendNext(transform.rotation); //rotation of the character
+
+        }
+        else
+        {
+            // Network player, receive data
+            Vector3 syncPosition = (Vector3)stream.ReceiveNext();
+            Quaternion syncRotation = (Quaternion)stream.ReceiveNext();
+        }
     }
 }

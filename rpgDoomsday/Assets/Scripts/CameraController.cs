@@ -19,6 +19,15 @@ public class CameraController : MonoBehaviour
     public float minScroll = 2f;
     public float maxScroll = 80f;
 
+    public void SetTarget(Transform newTarget)
+    {
+        target = newTarget;
+        pivot.position = target.position;
+
+        //Seteaza pozitia de start a camerei
+        localRotation = cameraStartRotation;
+    }
+
     void Start()
     {
         mainCamera = this.transform;

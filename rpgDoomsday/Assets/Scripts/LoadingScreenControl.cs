@@ -16,7 +16,7 @@ public class LoadingScreenControl : MonoBehaviour
     public void LoadScreenExample(int lvl) {
         
         instance = this;
-        Debug.Log("nr level " + lvl);
+        Debug.LogWarning("nr level " + lvl);
         StartCoroutine(LoadingScreen(lvl));
     }
 
