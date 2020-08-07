@@ -34,6 +34,13 @@ public class CharSelect : MonoBehaviourPunCallbacks
         //toggle render on for selected character
         if (charList[charIdx])
             charList[charIdx].SetActive(true);
+
+        Hero h = GetComponent<Hero>();
+        if (h)
+        {
+            h.heroClass = (HeroClass)charIdx;
+            h.SetClassSpells();
+        }
     }
 
     public void Select(int idx)

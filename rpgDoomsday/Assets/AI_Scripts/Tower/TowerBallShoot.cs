@@ -19,7 +19,7 @@ public class TowerBallShoot : MonoBehaviour
     {
         GameObject distance = Helpers.GetClosestPlayer(transform, players);
 
-        if (Vector3.Distance(this.transform.position, distance.transform.position) < 20f)
+        if (Vector3.Distance(this.transform.position, distance.transform.position) < 40f)
         {
             GameObject towershot1, towershot2, towershot3, towershot4;
             towershot1 = Instantiate(towerballPrefab, firePoint1.transform.position, Quaternion.identity);

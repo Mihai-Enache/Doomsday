@@ -39,16 +39,55 @@ public class Hero : ManaUser
         alliance = Alliance.Good;
         attackDamageMin = 9;
         attackDamageMax = 12;
-        // doar pentru testing
-        health /= 2;
         attackSpell = new SpellExplosion("Attack", 0, 0, 2.5f, new InstantAttackDamage(1), 0.5f, true, false, "ImpactHoly", false);
-        SetSpell(0, "Cleave");
-        SetSpell(1, "Blood Rush");
-        SetSpell(2, "Blink");
-        SetSpell(3, "Rain of Arrows");
-        SetSpell(4, "Fireball");
-        SetSpell(5, "Hellfire");
         AssignCanvas();
+    }
+
+    public void SetClassSpells()
+    {
+        switch (heroClass)
+        {
+            case HeroClass.WARRIOR:
+                SetSpell(0, "Cleave");
+                SetSpell(1, "Smash");
+                SetSpell(2, "Blink");
+                SetSpell(3, "Hellfire");
+                SetSpell(4, "Heal");
+                SetSpell(5, "Blood Rush");
+                break;
+            case HeroClass.RANGER:
+                SetSpell(0, "Frost Shot");
+                SetSpell(1, "Sanguine Shot");
+                SetSpell(2, "Blink");
+                SetSpell(3, "Rain of Arrows");
+                SetSpell(4, "Fireball");
+                SetSpell(5, "Blood Rush");
+                break;
+            case HeroClass.WIZARD:
+                SetSpell(0, "Arcane Missile");
+                SetSpell(1, "Fireball");
+                SetSpell(2, "Blink");
+                SetSpell(3, "Hellfire");
+                SetSpell(4, "Sanguine Shot");
+                SetSpell(5, "Heal");
+                break;
+            case HeroClass.CLERIC:
+                SetSpell(0, "Arcane Missile");
+                SetSpell(1, "Cleave");
+                SetSpell(2, "Heal");
+                SetSpell(3, "Frost Shot");
+                SetSpell(4, "Fireball");
+                SetSpell(5, "Smash");
+                break;
+            case HeroClass.ROGUE:
+                SetSpell(0, "Cleave");
+                SetSpell(1, "Sanguine Shot");
+                SetSpell(2, "Blink");
+                SetSpell(3, "Rain of Arrows");
+                SetSpell(4, "Smash");
+                SetSpell(5, "Blood Rush");
+                break;
+        }
     }
 
     public void AssignCanvas()
