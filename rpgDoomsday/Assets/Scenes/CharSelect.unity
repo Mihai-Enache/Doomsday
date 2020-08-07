@@ -11434,7 +11434,7 @@ PrefabInstance:
     - target: {fileID: 4666833334254170889, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 4666833334495734950, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
@@ -12104,7 +12104,7 @@ PrefabInstance:
     - target: {fileID: 4666833335246953933, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4666833335331998692, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
@@ -12160,17 +12160,17 @@ PrefabInstance:
     - target: {fileID: 4666833335375093427, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4666833335375093427, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4666833335375093427, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 4666833335437008964, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
@@ -12413,12 +12413,12 @@ PrefabInstance:
     - target: {fileID: 4666833336152150781, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4666833336152150781, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.18918936
       objectReference: {fileID: 0}
     - target: {fileID: 4666833336152150781, guid: 33c6ca53d6b6474418534bbb37c80518,
         type: 3}
@@ -12673,7 +12673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1159909257
 RectTransform:
   m_ObjectHideFlags: 0
