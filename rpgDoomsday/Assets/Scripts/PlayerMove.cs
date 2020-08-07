@@ -181,6 +181,7 @@ public class PlayerMove : MonoBehaviour, IPunObservable
             // We own this player: send the others our data
             stream.SendNext(transform.position); //position of the character
             stream.SendNext(transform.rotation); //rotation of the character
+            stream.SendNext(gameObject.GetComponent<Hero>().health);
 
         }
         else
@@ -188,6 +189,7 @@ public class PlayerMove : MonoBehaviour, IPunObservable
             // Network player, receive data
             Vector3 syncPosition = (Vector3)stream.ReceiveNext();
             Quaternion syncRotation = (Quaternion)stream.ReceiveNext();
+            gameObject.GetComponent<Hero>().health = (float)stream.ReceiveNext();
         }
     }
 }

@@ -18040,6 +18040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f3ac7abe056fbb4d8843f98dcf24099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lsc: {fileID: 0}
   MultiplayerLobby: {fileID: 0}
   CharacterSelect: {fileID: 0}
   multiplayerToggle: 0
@@ -18093,6 +18094,7 @@ MonoBehaviour:
   xp: 0
   inventory: {fileID: 0}
   heroClass: 3
+  canvas: {fileID: 0}
 --- !u!114 &7200925355241319578
 MonoBehaviour:
   m_ObjectHideFlags: 0

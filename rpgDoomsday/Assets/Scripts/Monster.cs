@@ -58,6 +58,7 @@ public class Monster : ManaUser, IPunObservable
             // We own this player: send the others our data
             stream.SendNext(transform.position); //position of the character
             stream.SendNext(transform.rotation); //rotation of the character
+            stream.SendNext(gameObject.GetComponent<Monster>().health);
 
         }
         else
@@ -65,6 +66,7 @@ public class Monster : ManaUser, IPunObservable
             // Network player, receive data
             Vector3 syncPosition = (Vector3)stream.ReceiveNext();
             Quaternion syncRotation = (Quaternion)stream.ReceiveNext();
+            gameObject.GetComponent<Monster>().health = (float)stream.ReceiveNext();
         }
     }
 }
