@@ -28452,6 +28452,12 @@ PrefabInstance:
       objectReference: {fileID: 1245431078}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf78997186f20a47b26309b72acb99c, type: 3}
+--- !u!223 &988368110 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6787619119273869133, guid: 0cf78997186f20a47b26309b72acb99c,
+    type: 3}
+  m_PrefabInstance: {fileID: 988368109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &990231694
 GameObject:
   m_ObjectHideFlags: 0
@@ -34360,6 +34366,7 @@ MonoBehaviour:
   xp: 0
   inventory: {fileID: 0}
   heroClass: 3
+  canvas: {fileID: 988368110}
 --- !u!4 &1245431079
 Transform:
   m_ObjectHideFlags: 0
