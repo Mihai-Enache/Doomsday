@@ -20,6 +20,10 @@
           <e p="SkeletonMelee" t="Include">
             <e p="MeleeHandler.cs" t="Include" />
           </e>
+          <e p="Tower" t="Include">
+            <e p="towerballScript.cs" t="Include" />
+            <e p="TowerBallShoot.cs" t="Include" />
+          </e>
         </e>
         <e p="animatii.cs" t="Include" />
         <e p="ASTROFISH_GAMES" t="Include">
@@ -35,6 +39,7 @@
             </e>
           </e>
         </e>
+        <e p="ButtonSound.cs" t="Include" />
         <e p="CameraScript" t="Include">
           <e p="RTS_Camera.cs" t="Include" />
         </e>

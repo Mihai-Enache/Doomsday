@@ -47,6 +47,7 @@ public class Hero : ManaUser
         SetSpell(3, "Rain of Arrows");
         SetSpell(4, "Fireball");
         SetSpell(5, "Hellfire");
+        AssignCanvas();
     }
 
     public new void FixedUpdate()
