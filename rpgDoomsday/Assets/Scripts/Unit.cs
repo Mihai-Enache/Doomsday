@@ -212,7 +212,7 @@ public abstract class Unit : MonoBehaviour
 
     public int GetAttackDamage()
     {
-        return Random.Range(attackDamageMin, attackDamageMax + 1);
+        return (attackDamageMax+attackDamageMin)/2;
     }
 
     public abstract bool CastAttack(Vector3 pos);

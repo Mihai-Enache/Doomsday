@@ -9,7 +9,7 @@ public class AggressiveMob : MonoBehaviour
     
     private float damage = 7.5f;
     private NavMeshAgent navMeshAgent;
-    private GameObject[] players;
+    [SerializeField] private GameObject[] players;
     public GameObject closePlayer;
     private Transform[] playersPosition;
     public static bool ableToAttack;
@@ -35,6 +35,7 @@ public class AggressiveMob : MonoBehaviour
 
     private void Update()
     {
+        players = GameObject.FindGameObjectsWithTag("Player");
         closePlayer = Helpers.GetClosestPlayer(this.transform, players);
         float distance =
             Vector3.Distance(closePlayer.transform.position, transform.position);
