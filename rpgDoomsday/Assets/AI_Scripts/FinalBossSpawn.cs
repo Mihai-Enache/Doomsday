@@ -26,8 +26,8 @@ public class FinalBossSpawn : MonoBehaviour
             Invoke("CloseGateBoss", 1f);
             Invoke("SpawnFinalBoss", 3.0f);
             Invoke("SpawnBossTowers", 15f);
-            InvokeRepeating("SpawnBossHelpers", 40f, 12.5f);
-            Invoke("SpawnHarderTower", 30f);
+            InvokeRepeating("SpawnBossHelpers", 30f, 7.5f);
+            Invoke("SpawnHarderTower", 25f);
         }
     }
 
@@ -40,7 +40,7 @@ public class FinalBossSpawn : MonoBehaviour
     
     void SpawnFinalBoss()
     {
-        Instantiate(finalBossPrefab, transform.position + new Vector3(0, 1, 40), Quaternion.identity);
+        Instantiate(finalBossPrefab, transform.position + new Vector3(0, 1, 50), Quaternion.identity);
     }
 
     void SpawnBossTowers()
@@ -58,6 +58,6 @@ public class FinalBossSpawn : MonoBehaviour
 
     void SpawnBossHelpers()
     {
-        Instantiate(helpersPrefab, transform.position + new Vector3(0, 1, 30f), Quaternion.identity);
+        Instantiate(helpersPrefab, transform.position + new Vector3(0, 1, 32f), Quaternion.identity);
     }
 }

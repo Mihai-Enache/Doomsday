@@ -10,6 +10,10 @@
       <e p="Assets" t="Include">
         <e p="AI_Scripts" t="Include">
           <e p="AggressiveMob.cs" t="Include" />
+          <e p="DragonBoss" t="Include">
+            <e p="DragonBallShoot.cs" t="Include" />
+            <e p="DragonScript.cs" t="Include" />
+          </e>
           <e p="FinalBossSpawn.cs" t="Include" />
           <e p="FleeFromPlayer.cs" t="Include" />
           <e p="Helpers.cs" t="Include" />
@@ -60,6 +64,9 @@
         <e p="Dungeon2to3.cs" t="Include" />
         <e p="Dungeon3to2.cs" t="Include" />
         <e p="DungeonCharacters" t="Include">
+          <e p="DragonBoss" t="Include">
+            <e p="DragonAnimation.cs" t="Include" />
+          </e>
           <e p="Mage" t="Include">
             <e p="Fantasy Monster(wizard) Demo" t="Include">
               <e p="Environment" t="Include">
