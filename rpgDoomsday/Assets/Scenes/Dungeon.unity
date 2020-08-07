@@ -28178,6 +28178,12 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!223 &1214456742 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6787619119273869133, guid: 0cf78997186f20a47b26309b72acb99c,
+    type: 3}
+  m_PrefabInstance: {fileID: 899156540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1215554241
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50491,6 +50497,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7200925355241319579, guid: 99a10b8a5c1ba064b905b9f53a8188e9,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1214456742}
     - target: {fileID: 7200925355241319582, guid: 99a10b8a5c1ba064b905b9f53a8188e9,
         type: 3}
       propertyPath: m_Name
