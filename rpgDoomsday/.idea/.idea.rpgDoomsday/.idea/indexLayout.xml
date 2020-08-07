@@ -17,7 +17,10 @@
       <Path>.idea</Path>
       <Path>.vscode</Path>
       <Path>Library</Path>
+      <Path>MonoBleedingEdge</Path>
+      <Path>Temp</Path>
       <Path>obj</Path>
+      <Path>rpgDoomsday_Data</Path>
     </explicitExcludes>
   </component>
 </project>
