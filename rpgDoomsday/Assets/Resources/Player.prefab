@@ -23189,6 +23189,7 @@ MonoBehaviour:
   xp: 0
   inventory: {fileID: 5600256628594340309}
   heroClass: 3
+  canvas: {fileID: 0}
 --- !u!114 &5600256628594340309
 MonoBehaviour:
   m_ObjectHideFlags: 0

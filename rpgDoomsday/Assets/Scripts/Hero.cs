@@ -31,7 +31,6 @@ public class Hero : ManaUser
     public PlayerInventory inventory;
     public const int goldPercentageLost = 10;
     public HeroClass heroClass;
-    public Canvas canvas;
 
     public void Start()
     {
@@ -48,16 +47,6 @@ public class Hero : ManaUser
         SetSpell(3, "Rain of Arrows");
         SetSpell(4, "Fireball");
         SetSpell(5, "Hellfire");
-    }
-
-    public void AssignCanvas()
-    {
-        canvas.GetComponentInChildren<UIHUD>().hero = this;
-        canvas.GetComponentInChildren<UISpellTooltip>().hero = this;
-        foreach (UISpell uISpell in canvas.GetComponentsInChildren<UISpell>())
-            uISpell.hero = this;
-        foreach (UIBuff uIBuff in canvas.GetComponentsInChildren<UIBuff>())
-            uIBuff.hero = this;
     }
 
     public new void FixedUpdate()
