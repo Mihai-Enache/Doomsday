@@ -22,7 +22,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Mage/MageHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Tower/TowerBallShoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Patrol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/Tower/towerballScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ManaUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AI_Scripts/DragonBoss/DragonScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hero.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -35,12 +37,15 @@
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/SkeletonMelee/AggressiveMob.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/SkeletonMage.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/AggressiveMob.cs" />
-        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/MageHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/FireballShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/towerballScript.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/TowerBallShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/Tower/TowerBallShoot.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/MageHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/DragonBoss/DragonScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Mage/DragonBallShoot.cs" />
         <option value="$PROJECT_DIR$/Assets/AI_Scripts/FinalBossSpawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/AI_Scripts/Tower/towerballScript.cs" />
       </list>
     </option>
   </component>
@@ -92,7 +97,8 @@
       <workItem from="1596726730585" duration="20000" />
       <workItem from="1596795791540" duration="2248000" />
       <workItem from="1596799344620" duration="1673000" />
-      <workItem from="1596801144565" duration="987000" />
+      <workItem from="1596801144565" duration="1536000" />
+      <workItem from="1596803782354" duration="4133000" />
     </task>
     <servers />
   </component>

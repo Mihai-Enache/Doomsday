@@ -11,5 +11,9 @@ public class towerballScript : MonoBehaviour
             other.GetComponent<Unit>().TakeDamage(10f);
             Destroy(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
