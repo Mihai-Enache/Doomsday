@@ -11,6 +11,7 @@ public class FinalBossSpawn : MonoBehaviour
     public GameObject helpersPrefab;
     public GameObject gatePrefab;
     private Vector3 scaleChange;
+    private bool done;
 
     private void Start()
     {
@@ -19,11 +20,13 @@ public class FinalBossSpawn : MonoBehaviour
     
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !done)
         {
+            done = true;
             Invoke("CloseGateBoss", 1f);
             Invoke("SpawnFinalBoss", 3.0f);
             Invoke("SpawnBossTowers", 15f);
+            InvokeRepeating("SpawnBossHelpers", 40f, 12.5f);
             Invoke("SpawnHarderTower", 30f);
         }
     }
@@ -51,5 +54,10 @@ public class FinalBossSpawn : MonoBehaviour
     void SpawnHarderTower()
     {
         Instantiate(towerPrefab, transform.position + new Vector3(0, 1, 27.5f), Quaternion.identity);
+    }
+
+    void SpawnBossHelpers()
+    {
+        Instantiate(helpersPrefab, transform.position + new Vector3(0, 1, 30f), Quaternion.identity);
     }
 }
