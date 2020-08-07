@@ -19,10 +19,13 @@ public class FinalBossSpawn : MonoBehaviour
     
     private void OnTriggerExit(Collider other)
     {
-        Invoke("CloseGateBoss", 0.5f);
-        Invoke("SpawnFinalBoss", 3.0f);
-        Invoke("SpawnBossTowers", 15f);
-        Invoke("SpawnHarderTower", 30f);
+        if (other.tag == "Player")
+        {
+            Invoke("CloseGateBoss", 1f);
+            Invoke("SpawnFinalBoss", 3.0f);
+            Invoke("SpawnBossTowers", 15f);
+            Invoke("SpawnHarderTower", 30f);
+        }
     }
 
     void CloseGateBoss()
