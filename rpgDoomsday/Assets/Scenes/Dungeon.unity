@@ -50210,6 +50210,11 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 76391796}
+    - target: {fileID: 648334884835412270, guid: 805ec93660803bb4788a6c246ad73b70,
+        type: 3}
+      propertyPath: myCanvas
+      value: 
+      objectReference: {fileID: 1214456742}
     - target: {fileID: 648334884835412271, guid: 805ec93660803bb4788a6c246ad73b70,
         type: 3}
       propertyPath: m_Name
